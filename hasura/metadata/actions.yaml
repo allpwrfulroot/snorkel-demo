@@ -1,0 +1,21 @@
+actions:
+- name: customGreeting
+  definition:
+    kind: ""
+    handler: https://hasura-demo.vercel.app/api/greeting
+    timeout: 5
+  permissions:
+  - role: user
+- name: helloWorld
+  definition:
+    kind: ""
+    handler: https://hasura-demo.vercel.app/api
+    timeout: 10
+custom_types:
+  enums: []
+  input_objects:
+  - name: GreetingInput
+  objects:
+  - name: HelloOutput
+  - name: GreetingOutput
+  scalars: []

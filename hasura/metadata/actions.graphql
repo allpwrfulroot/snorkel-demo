@@ -1,0 +1,22 @@
+type Query {
+  customGreeting(
+    name: String!
+  ): GreetingOutput
+}
+
+type Query {
+  helloWorld: HelloOutput
+}
+
+input GreetingInput {
+  name: String!
+}
+
+type HelloOutput {
+  message: String!
+}
+
+type GreetingOutput {
+  greeting: String!
+}
+
